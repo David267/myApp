@@ -1,0 +1,83 @@
+<script src="/javascripts/registerOrDelete.js"></script>
+
+<div class="container" style="border: darkslategray 3px solid; border-bottom: 0px; border-radius: 30px 30px 0px 0px;">
+
+    <h2 class="text-center">Control users</h2>
+
+    <form method="post" action="/users">
+
+        <div class="row">
+            <div class="hidden-xs col-sm-3 col-md-2">
+
+                <img src="/images/mongodb.png" width="300px;" height="100px;" style="transform: rotate(-90deg); margin-top: 125px; margin-left: -65px;">
+
+            </div>
+
+            <div class="col-xs-8 col-sm-5 col-md-6">
+
+                <div class="radio">
+                    <label>
+                        <input type="radio" onclick="add()" name="optionsRadios" id="optionsRadios1" value="register" checked>
+                        Check for new user registration
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" onclick="remove()" name="optionsRadios" id="optionsRadios2" value="delete">
+                        Check for user deletion
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" class="form-control" id="username" placeholder="Username" name="username">
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Password" name="password">
+                </div>
+
+                <p><b>Type</b></p>
+
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="optionsRadios2" id="optionsRadios1" value="user" checked>
+                        User
+                    </label>
+                </div>
+
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="optionsRadios2" id="optionsRadios2" value="admin">
+                        Administrator
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label for="coins">Coins</label>
+                    <input type="number" class="form-control" id="coins" placeholder="Coins amount" name="coins">
+                </div>
+
+            </div>
+
+            <div class="col-xs-4 col-sm-3 col-md-4">
+
+                <p id = 'info'>info</p>
+
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-xs-offset-3 col-xs-6 col-sm-offset-4 col-sm-4 ">
+
+                <button type="submit" id="button" class="btn btn-success btn-block">Register</button>
+
+            </div>
+        </div>
+
+    </form>
+    <br>
+
+</div>

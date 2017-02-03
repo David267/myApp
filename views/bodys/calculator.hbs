@@ -1,0 +1,60 @@
+<script src="/javascripts/calculator.js"></script>
+<div style="background-color: #9acfea;border-radius: 5px; width: 300px; height: 350px; margin:0px;">
+    <br>
+
+
+    <div style="font-size: 30px;">
+
+        <div id="view" class="container" style="text-align:right ; padding-top:6px; width: 280px; height: 50px; background-color: white; border-radius:5px; border: 2px solid #2b669a;" >
+
+
+        </div>
+
+
+        <div  style="margin:20px 15px 0px 15px; padding: 0px;display:-webkit-box;-webkit-box-orient: horizontal;">
+
+            <div  class="text-center calcBtn calcBtnNr" id="clear" onmousedown="mDown('clear')" onmouseup="mUp()" onmouseleave="mLeave()" >C</div>
+            <div  class="text-center calcBtn calcBtnNr" id="back" onmousedown="mDown('back')" onmouseup="mUp()" onmouseleave="mLeave()">&lArr;</div>
+            <div  class="text-center calcBtn calcBtnNr" id="root" onmousedown="mDown('root')" onmouseup="mUp()" onmouseleave="mLeave()">&radic;</div>
+            <div  class="text-center calcBtn calcBtnNr" id="divide" onmousedown="mDown('divide')" onmouseup="mUp()" onmouseleave="mLeave()" >&divide;</div>
+
+        </div>
+        <div  style="margin:0px 15px 0px 15px; padding: 0px;display:-webkit-box;-webkit-box-orient: horizontal;">
+
+            <div  class="text-center calcBtn" id="seven" onmousedown="mDown('seven')" onmouseup="mUp()" onmouseleave="mLeave()">7</div>
+            <div  class="text-center calcBtn" id="eight" onmousedown="mDown('eight')" onmouseup="mUp()" onmouseleave="mLeave()">8</div>
+            <div  class="text-center calcBtn" id="nine" onmousedown="mDown('nine')" onmouseup="mUp()" onmouseleave="mLeave()" >9</div>
+            <div  class="text-center calcBtn calcBtnNr" id="multiply" onmousedown="mDown('multiply')" onmouseup="mUp()" onmouseleave="mLeave()">&lowast;</div>
+
+        </div>
+        <div  style="margin:0px 15px 0px 15px; padding: 0px;display:-webkit-box;-webkit-box-orient: horizontal;">
+
+            <div  class="text-center calcBtn" id="four" onmousedown="mDown('four')" onmouseup="mUp()" onmouseleave="mLeave()" >4</div>
+            <div  class="text-center calcBtn" id="five" onmousedown="mDown('five')" onmouseup="mUp()" onmouseleave="mLeave()" >5</div>
+            <div  class="text-center calcBtn" id="six" onmousedown="mDown('six')" onmouseup="mUp()" onmouseleave="mLeave()" >6</div>
+            <div  class="text-center calcBtn calcBtnNr" id="minus" onmousedown="mDown('minus')" onmouseup="mUp()" onmouseleave="mLeave()">-</div>
+
+        </div>
+        <div  style="margin:0px 15px 0px 15px; padding: 0px;display:-webkit-box;-webkit-box-orient: horizontal;">
+
+            <div  class="text-center calcBtn" id="one" onmousedown="mDown('one')" onmouseup="mUp()" onmouseleave="mLeave()" >1</div>
+            <div  class="text-center calcBtn" id="two" onmousedown="mDown('two')" onmouseup="mUp()" onmouseleave="mLeave()">2</div>
+            <div  class="text-center calcBtn" id="three" onmousedown="mDown('three')" onmouseup="mUp()" onmouseleave="mLeave()">3</div>
+            <div  class="text-center calcBtn calcBtnNr" id="plus" onmousedown="mDown('plus')" onmouseup="mUp()" onmouseleave="mLeave()" >+</div>
+
+        </div>
+        <div  style="margin:0px 15px 0px 15px; padding: 0px;display:-webkit-box;-webkit-box-orient: horizontal;">
+
+            <div  class="text-center calcBtn calcBtnNr" id="plusMinus" onmousedown="mDown('plusMinus')" onmouseup="mUp()" onmouseleave="mLeave()">&plusmn;</div>
+            <div  class="text-center calcBtn" id="zero"  onmousedown="mDown('zero')" onmouseup="mUp()" onmouseleave="mLeave()">0</div>
+            <div  class="text-center calcBtn calcBtnNr" id="dot" onmousedown="mDown('dot')" onmouseup="mUp()" onmouseleave="mLeave()" style="background-color: red;">. (no)</div>
+            <div  class="text-center calcBtn calcBtnNr" id="equal" onmousedown="mDown('equal')" onmouseup="mUp()" onmouseleave="mLeave()">=</div>
+
+        </div>
+    </div>
+    <div ng-app="" ng-init="person={firstName:'John',lastName: 10}">
+
+        <p>The name is <span ng-bind="person.lastName"></span></p>
+
+    </div>
+</div>

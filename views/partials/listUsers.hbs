@@ -1,0 +1,29 @@
+<div class="container" style="border: darkslategray 3px solid; border-radius:0px 0px 30px 30px; ">
+
+    <h2 class="text-center">List of the users</h2>
+
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>Password</th>
+                <th>Type</th>
+                <th>Coins</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        {{#each users}}
+
+            <tr>
+                <td>{{username}}</td>
+                <td>{{password}}</td>
+                <td>{{type}}</td>
+                <td>{{coins}}</td>
+            </tr>
+
+        {{/each}}
+
+        </tbody>
+    </table>
+</div>

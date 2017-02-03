@@ -1,0 +1,59 @@
+<h2 class="text-center">Our products</h2>
+
+    {{#each products}}
+
+        <div class="row" style="border: darkslategray 3px solid; padding:15px; background-color: #9acfea ;">
+
+
+            <div class="col-sm-offset-1 col-sm-3 color" style=" border: 2px solid darkslategray; border-radius: 30px;">
+                <img class="spin" src="{{url}}" width="200px;" height="200px;" style="padding:30px;">
+            </div>
+<h2></h2>
+            <div class="col-sm-3">
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr>
+                            <td>
+                            <b>Numeris:</b> {{id}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            <b>Pavadinimas:</b> {{pavadinimas}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            <b>Sandelyje:</b> {{sandelyje}} vnt.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            <b>Kaina:</b> {{kaina}} eur.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="col-sm-5">
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr>
+                            <td>
+                                 <b>Aprasymas:</b> {{aprasymas}}
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+        <h2></h2>
+    {{/each}}
+
+
+
+
+
+
